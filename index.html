@@ -6,29 +6,74 @@
     <title>Desk Control Home</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background: linear-gradient(to bottom, #1db954, #191414); /* Spotify green to dark */
+            color: white;
             text-align: center;
-            padding: 50px;
-            background-color: #f0f0f0;
         }
+
+        h1 {
+            font-size: 3em;
+            margin-top: 50px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+        }
+
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
         button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #4CAF50;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: #1db954;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 50px;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s ease, transform 0.2s ease;
         }
+
         button:hover {
-            background-color: #45a049;
+            background-color: #17a44a;
+            transform: scale(1.05);
         }
+
+        footer {
+            margin-top: auto;
+            padding: 20px;
+            background-color: #191414;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #B3B3B3;
+        }
+
+        footer img {
+            height: 30px;
+            margin-right: 10px;
+        }
+
+        footer p {
+            font-size: 0.9em;
+        }
+
     </style>
 </head>
 <body>
     <h1>Welcome to the Desk Control Home</h1>
-    <p>This is your control center. From here, you can configure your settings.</p>
+    <p>Your control center to configure settings.</p>
     <button onclick="location.href='https://deskcontrolset.github.io/login'">Configure</button>
+
+    <footer>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Spotify_logo_without_text.svg" alt="Spotify Logo">
+        <p>&copy; 2024 Desk Control. All rights reserved.</p>
+    </footer>
 </body>
 </html>
