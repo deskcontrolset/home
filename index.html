@@ -15,6 +15,29 @@
             background: linear-gradient(to bottom, #1db954, #191414); /* Spotify green to dark */
             color: white;
             text-align: center;
+            position: relative;
+        }
+
+        /* Zwartige schaduw in de hoeken */
+        ::before, ::after {
+            content: '';
+            position: absolute;
+            width: 50%;
+            height: 50%;
+            background: #191414;
+            z-index: -1;
+        }
+
+        ::before {
+            top: 0;
+            left: 0;
+            border-radius: 0 100% 0 0;
+        }
+
+        ::after {
+            bottom: 0;
+            right: 0;
+            border-radius: 100% 0 0 0;
         }
 
         h1 {
@@ -30,7 +53,7 @@
         }
 
         button {
-            padding: 15px 30px;
+            padding: 15px 20px; /* Verkleind naar 10px kleiner aan de zijkanten */
             font-size: 1.2em;
             background-color: #1db954;
             color: white;
